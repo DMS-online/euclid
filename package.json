@@ -1,7 +1,7 @@
 {
-  "name": "project-name",
+  "name": "evklid",
   "version": "1.0.0",
-  "description": "Some description of the project.",
+  "description": "Разрабатываем проектные решения любой сложности по вашим или полностью с нуля созданным чертежам",
   "main": "gulpfile.babel.js",
   "scripts": {
     "prepare": "husky install",
@@ -23,21 +23,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SineYlo/Starter-Template.git"
+    "url": "git+https://github.com/SineYlo/evklid.git"
   },
   "keywords": [
-    "keyword-1",
-    "keyword-2",
-    "keyword-3",
-    "keyword-4",
-    "keyword-5"
+    "проектные системы",
+    "разработка чертежей",
+    "проектирование",
+    "прототипирование",
+    "любая сложность"
   ],
   "author": "SineYlo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SineYlo/Starter-Template/issues"
+    "url": "https://github.com/SineYlo/evklid/issues"
   },
-  "homepage": "https://github.com/SineYlo/Starter-Template#readme",
+  "homepage": "https://github.com/SineYlo/evklid#readme",
   "devDependencies": {
     "@babel/core": "^7.17.4",
     "@babel/eslint-parser": "^7.17.0",
