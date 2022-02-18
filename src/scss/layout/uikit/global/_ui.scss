@@ -6,3 +6,78 @@
     position: relative;
   }
 }
+
+.body {
+  overflow: hidden;
+  font-family: $primary-font-family;
+  color: $tenth-color;
+
+  &__loader {
+    @include flex;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: $z-modal;
+    align-items: center;
+    justify-content: center;
+    background-color: $white-color;
+  }
+}
+
+.body.loaded {
+  overflow: visible;
+}
+
+.container {
+  @include containerBase(1870px, 50px);
+}
+
+.btn {
+  display: inline-block;
+  border-radius: $third-br;
+  font-weight: $third-font-weight;
+  line-height: 20px;
+  color: $white-color;
+  background-color: $primary-color;
+  transition: background-color $fast-transition-duration ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.focus-visible {
+    background-color: $second-color-effects;
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      background-color: $second-color-effects;
+    }
+  }
+
+  &:active {
+    background-color: $third-color-effects;
+  }
+}
+
+.title {
+  font-size: $text-size-max-tiny;
+  line-height: 59px;
+}
+
+@mixin outlineFocus($width: 2px, $offset: 3px) {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    outline: #{$width} solid transparent;
+    outline-offset: #{$offset};
+    transition: outline-color $fast-transition-duration ease-in-out;
+  }
+}

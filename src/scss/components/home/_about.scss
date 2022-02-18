@@ -1,0 +1,125 @@
+.section-about {
+  &_indent {
+    margin-bottom: 104px;
+  }
+
+  &__title {
+    margin-bottom: 17px;
+  }
+
+  &__desc {
+    margin-bottom: 49px;
+    max-width: 1235px;
+    line-height: 32px;
+  }
+}
+
+.content-about {
+  @include grid;
+
+  grid-auto-rows: minmax(622px, auto);
+  grid-template: minmax(622px, auto) / minmax(auto, 49.03955%) minmax(auto, 49.15254%);
+  gap: $primary-gap;
+}
+
+.left-about {
+  @include flex;
+
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: $fifth-br;
+
+  &__box {
+    @include f-center-sb;
+
+    border-radius: inherit;
+    padding: 50px;
+    color: $white-color;
+    background-color: $twelfth-color;
+  }
+
+  &__desc {
+    margin-right: 20px;
+    max-width: 433px;
+    font-weight: $third-font-weight;
+    line-height: 32px;
+  }
+
+  &__more {
+    border: 3px solid $primary-color;
+    border-radius: $third-br;
+    padding: 17px 35px;
+    min-width: 175px;
+    font-weight: $third-font-weight;
+    line-height: 20px;
+    transition-property: border-color, background-color;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible {
+      background-color: $primary-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+
+    &:active {
+      border-color: $third-color-effects;
+      background-color: $third-color-effects;
+    }
+  }
+
+  .webp-false &,
+  .avif-false & {
+    background: url("../img/pictures/fr-builder-1920-bg.png") center / cover no-repeat;
+  }
+
+  .webp-true & {
+    background: url("../img/pictures/fr-builder-1920-bg.webp") center / cover no-repeat;
+  }
+
+  .avif-true & {
+    background: url("../img/pictures/fr-builder-1920-bg.avif") center / cover no-repeat;
+  }
+}
+
+.list-about {
+  @include grid;
+
+  grid-auto-rows: minmax(295px, auto);
+  grid-template: repeat(2, minmax(295px, auto)) / 1fr;
+  gap: $primary-gap;
+
+  &__content {
+    border: 1px solid $fourth-color;
+    border-radius: $fifth-br;
+    padding: 66px 117px 63px 299px;
+    min-height: 100%;
+
+    &_box {
+      background: url("../img/sprites/sprite.svg#fv-box-bg") 59px 64px / 190px 165px no-repeat;
+    }
+
+    &_gear {
+      background: url("../img/sprites/sprite.svg#fv-gear-bg") 59px 64px / 190px 165px no-repeat;
+    }
+  }
+
+  &__title {
+    margin-bottom: 7px;
+    font-weight: $third-font-weight;
+    font-size: $text-size-huge;
+    line-height: 29px;
+  }
+
+  &__desc {
+    line-height: 2;
+  }
+}

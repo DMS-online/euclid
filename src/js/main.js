@@ -2,6 +2,8 @@
 // |=============== CONNECTING EXTERNAL MODULES ===============>
 import focusVisible from 'focus-visible';
 
+// |=============== SCRIPT CONNECTION | LOADER ===============>
+import loader from './components/home/loader';
 // |=============== SCRIPT CONNECTION | BURGER ===============>
 import burger from './components/home/burger';
 // |=============== SCRIPT CONNECTION | SEARCH ===============>

@@ -1,0 +1,199 @@
+.site-header {
+  border-radius: 0 0 $fifth-br $fifth-br;
+  padding: 14px 0;
+  box-shadow: 0 5px 40px $thirteenth-color;
+
+  &_indent {
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    @include f-ai-center;
+
+    position: relative;
+  }
+
+  &__logo {
+    margin-right: 31.24294%;
+  }
+
+  &__nav {
+    margin-right: auto;
+  }
+
+  &__search-open {
+    position: relative;
+  }
+
+  &__form-search {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-200%);
+    transition-property: opacity, visibility, transform;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: linear;
+
+    &.search-active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.burger-header {
+  display: none;
+}
+
+.nav-header {
+  width: 40%;
+
+  &__list {
+    @include f-center-sb;
+  }
+
+  &__link {
+    @include outlineFocus(2px, 3px);
+
+    position: relative;
+    display: inline-block;
+    font-weight: $second-font-weight;
+    font-size: $text-size-medium;
+    line-height: 22px;
+    text-decoration: underline solid transparent;
+    transition-property: color, text-decoration-color;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible::before {
+      outline-color: $primary-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        text-decoration-color: $primary-color;
+      }
+    }
+
+    &:active {
+      text-decoration-color: currentColor;
+      color: $third-color-effects;
+    }
+  }
+}
+
+.open-search {
+  @include outlineFocus(2px, 2px);
+
+  transition: fill $fast-transition-duration ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.focus-visible::before {
+    outline-color: $primary-color;
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      fill: $primary-color;
+    }
+  }
+
+  &:active {
+    fill: $third-color-effects;
+  }
+}
+
+.search-form {
+  @include f-ai-center;
+
+  border-radius: $third-br;
+  padding: 16px 13px 16px 32px;
+  width: min(100%, 539px);
+  height: 60px;
+  box-shadow: 0 0 20px $thirteenth-color;
+  background-color: $white-color;
+
+  &__label {
+    @include visuallyHidden;
+  }
+
+  &__field {
+    margin-right: 14px;
+    border-bottom: 1px solid $third-color;
+    width: min(100%, 412px);
+    height: 28px;
+    font-weight: $primary-font-weight;
+    font-size: $text-size-medium;
+    color: $fifth-color;
+
+    &::placeholder {
+      color: currentColor;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__find {
+    margin-right: 20px;
+  }
+
+  &__find,
+  &__close {
+    @include outlineFocus(2px, 2px);
+
+    position: relative;
+    transition: outline-color $fast-transition-duration ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible::before {
+      outline-color: $primary-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover .find-search__icon,
+      &:hover .close-search__icon {
+        fill: $primary-color;
+      }
+    }
+  }
+}
+
+.find-search {
+  &__icon {
+    fill: $tenth-color;
+    transition: fill $fast-transition-duration ease-in-out;
+  }
+
+  &:active &__icon {
+    fill: $third-color-effects;
+  }
+}
+
+.close-search {
+  &__icon {
+    fill: $sixth-color;
+    transition: fill $fast-transition-duration ease-in-out;
+  }
+
+  &:active &__icon {
+    fill: $tenth-color;
+  }
+}

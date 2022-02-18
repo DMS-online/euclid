@@ -1,0 +1,49 @@
+.loader {
+  &__spinner {
+    display: grid;
+    border: 4px solid $sixteenth-color;
+    border-color: $primary-color $sixteenth-color;
+    border-radius: $sixth-br;
+    width: 56px;
+    height: 56px;
+    animation: spinner 1s infinite linear;
+
+    &::before,
+    &::after {
+      content: "";
+      grid-area: 1 / 1;
+      margin: 2px;
+      border: inherit;
+      border-radius: $sixth-br;
+    }
+
+    &::before {
+      border-color: $tenth-color $sixteenth-color;
+      animation: inherit;
+      animation-duration: 0.5s;
+      animation-direction: reverse;
+    }
+
+    &::after {
+      margin: 8px;
+    }
+  }
+
+  .loader-hidden & {
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+  }
+
+  .loaded & {
+    display: none;
+  }
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(1turn);
+  }
+}

@@ -1,0 +1,53 @@
+<header class="site-header site-header_indent">
+  <div class="container site-header__container">
+    <button class="burger-header site-header__burger" type="button" aria-controls="nav-header" aria-expanded="false" aria-label="Открыть основное меню.">
+      <span class="burger-header__line burger-header__line_first" aria-hidden="true"></span>
+      <span class="burger-header__line burger-header__line_second" aria-hidden="true"></span>
+      <span class="burger-header__line burger-header__line_third" aria-hidden="true"></span>
+      <span class="burger-header__line burger-header__line_fourth" aria-hidden="true"></span>
+    </button>
+    <a class="logo-header site-header__logo" href="#">
+      <img class="logo-header__picture" src="img/sprites/sprite.svg#logo-evklid-header" width="225" height="72" decoding="async" loading="lazy" alt="Логотип компании Евклид.">
+    </a>
+    <nav class="nav-header site-header__nav" id="nav-header" aria-label="">
+      <ul class="nav-header__list">
+        <li class="nav-header__item">
+          <a class="nav-header__link" href="#">О&nbsp;нас</a>
+        </li>
+        <li class="nav-header__item">
+          <a class="nav-header__link" href="#">Проекты</a>
+        </li>
+        <li class="nav-header__item">
+          <a class="nav-header__link" href="#">Этапы</a>
+        </li>
+        <li class="nav-header__item">
+          <a class="nav-header__link" href="#">Отзывы</a>
+        </li>
+        <li class="nav-header__item">
+          <a class="nav-header__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="open-search site-header__search-open" type="button" aria-controls="search-form" aria-expanded="false" aria-label="Открыть поиск по сайту.">
+      <svg class="open-search__icon" width="24" height="24" aria-hidden="true">
+        <use xlink:href="img/sprites/sprite.svg#icon-search" />
+      </svg>
+    </button>
+    <form class="search-form site-header__form-search" id="search-form" action="#" name="searchForm">
+      <label class="search-form__label" for="field-search">
+        Введите поисковый запрос.
+      </label>
+      <input class="search-form__field" id="field-search" type="search" name="searchFormField" placeholder="Что будем искать?" translate="no" autocapitalize="off" autocorrect="false" autocomplete="on" spellcheck="false">
+      <button class="find-search search-form__find" aria-label="Активировать поиск по сайту.">
+        <svg class="find-search__icon" width="24" height="24" aria-hidden="true">
+          <use xlink:href="img/sprites/sprite.svg#icon-search" />
+        </svg>
+      </button>
+      <button class="close-search search-form__close" type="button" aria-controls="search-form" aria-expanded="true" aria-label="Закрыть поиск по сайту.">
+        <svg class="close-search__icon" width="24" height="24" aria-hidden="true">
+          <use xlink:href="img/sprites/sprite.svg#icon-close" />
+        </svg>
+      </button>
+    </form>
+  </div>
+</header>

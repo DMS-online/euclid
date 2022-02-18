@@ -1,0 +1,134 @@
+.section-faq {
+  padding-bottom: 100px;
+
+  &__title {
+    margin-bottom: 29px;
+  }
+}
+
+.accordion-faq {
+  &__item {
+    margin-top: -1px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid $fourth-color;
+    padding: 39px 0;
+    transition: border-color $fast-transition-duration ease-in-out;
+
+    &:first-child {
+      border-top: 1px solid $fourth-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        border-color: $primary-color;
+      }
+
+      &:hover .accordion-faq__title {
+        color: $primary-color;
+      }
+
+      &:hover .accordion-faq__icon {
+        background-color: $primary-color;
+      }
+
+      &:hover .accordion-faq__icon::before,
+      &:hover .accordion-faq__icon::after {
+        background-color: $white-color;
+      }
+    }
+
+    &.accordion-active .accordion-faq__content {
+      overflow: visible;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &.accordion-active .accordion-faq__icon {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__btn {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -40px;
+      width: 100%;
+      min-height: 112px;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    font-weight: $third-font-weight;
+    font-size: $text-size-huge;
+    line-height: 32px;
+    transform: translateY(2px);
+    transition: color $fast-transition-duration ease-in-out;
+  }
+
+  &__slash {
+    color: $fourth-color;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 0;
+    top: -9px;
+    display: inline-block;
+    border-radius: $sixth-br;
+    width: 50px;
+    height: 50px;
+    background-color: $second-color;
+    transition-property: background-color, transform;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      background-color: $eighth-color;
+      transition: background-color $fast-transition-duration ease-in-out;
+    }
+
+    &::before {
+      right: 24px;
+      top: 9px;
+      width: 1px;
+      height: 31px;
+    }
+
+    &::after {
+      right: 9px;
+      top: 24px;
+      width: 31px;
+      height: 1px;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: max-height, opacity, visibility;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+  }
+
+  &__text {
+    max-width: 1003px;
+    line-height: 32px;
+
+    &_indent {
+      margin-bottom: 32px;
+      padding-top: 30px;
+    }
+  }
+}

@@ -25,6 +25,18 @@
       "rules",
       {
         "type": "rule",
+        "selector": "&:first-child"
+      },
+      {
+        "type": "rule",
+        "selector": "&:last-child"
+      },
+      {
+        "type": "rule",
+        "selector": "&:nth-child.+"
+      },
+      {
+        "type": "rule",
         "selector": "&:link"
       },
       {
@@ -58,18 +70,6 @@
       {
         "type": "rule",
         "selector": "&:disabled"
-      },
-      {
-        "type": "rule",
-        "selector": "&:first-child"
-      },
-      {
-        "type": "rule",
-        "selector": "&:last-child"
-      },
-      {
-        "type": "rule",
-        "selector": "&:nth-child.+"
       },
       {
         "type": "rule",

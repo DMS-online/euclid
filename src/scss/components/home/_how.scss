@@ -1,0 +1,143 @@
+.section-how {
+  &_indent {
+    margin-bottom: 115px;
+  }
+
+  &__title {
+    margin-bottom: 47px;
+  }
+
+  &__list {
+    margin-bottom: 46px;
+  }
+}
+
+.list-how {
+  @include f-center-sb;
+
+  width: min(100%, 458px);
+
+  &__step {
+    @include outlineFocus(2px, 3px);
+
+    position: relative;
+    font-size: $text-size-medium;
+    line-height: 22px;
+    transition: color $fast-transition-duration ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible::before {
+      outline-color: $primary-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &:active {
+      color: $third-color-effects;
+    }
+
+    &.tab-active {
+      color: $third-color-effects;
+    }
+  }
+}
+
+.content-how {
+  display: none;
+
+  &__inner {
+    @include flex;
+
+    flex-direction: column;
+    margin-right: 100px;
+    min-height: 468px;
+    max-width: 42.82486%;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: $third-font-weight;
+    font-size: $text-size-huge;
+    line-height: 32px;
+  }
+
+  &__desc {
+    margin-bottom: auto;
+    line-height: 2;
+  }
+
+  &__actions {
+    @include f-center-sb;
+
+    max-width: 354px;
+  }
+
+  &__more {
+    padding: 20px 38px;
+    min-width: 175px;
+
+    &.focus-visible::before {
+      background-color: $primary-color-effects;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        background-color: $primary-color-effects;
+      }
+    }
+
+    &:active {
+      background-color: $third-color-effects;
+    }
+  }
+
+  &__contract {
+    border: 1px solid $tenth-color;
+    border-radius: $third-br;
+    padding: 19px 37px;
+    min-width: 147px;
+    line-height: 20px;
+    transition-property: color, border-color, background-color;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible {
+      border-color: $eighth-color;
+      color: $white-color;
+      background-color: $eighth-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        border-color: $eighth-color;
+        color: $white-color;
+        background-color: $eighth-color;
+      }
+    }
+
+    &:active {
+      border-color: $black-color;
+      color: $white-color;
+      background-color: $black-color;
+    }
+  }
+
+  &__picture {
+    transform: translateY(8px);
+  }
+
+  &.tab-active {
+    @include f-jc-sb;
+  }
+}

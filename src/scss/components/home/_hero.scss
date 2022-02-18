@@ -1,0 +1,126 @@
+.section-hero {
+  &_indent {
+    margin-bottom: 54px;
+  }
+
+  &__container {
+    position: relative;
+    z-index: $second-z;
+    padding: 105px 50px 100px 130px;
+  }
+
+  &__title {
+    margin-bottom: 21px;
+    max-width: 837px;
+    font-weight: $fourth-font-weight;
+    font-size: $text-size-max-big;
+    line-height: 85px;
+    color: $white-color;
+  }
+
+  &__desc {
+    margin-bottom: 88px;
+    max-width: 790px;
+    font-weight: $third-font-weight;
+    font-size: $text-size-huge;
+    line-height: 29px;
+    color: $white-color;
+  }
+
+  &__order {
+    padding: 25px 39px;
+    min-width: 280px;
+    font-size: $text-size-large;
+    line-height: 28px;
+  }
+
+  &__swiper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: $primary-z;
+    border-radius: $fifth-br;
+    width: calc(100% - 100px);
+    min-height: 620px;
+  }
+
+  &__slide {
+    border-radius: $fifth-br;
+
+    &_balconies {
+      .webp-false &,
+      .avif-false & {
+        background: $primary-fb-color url("../img/pictures/fr-balconies-1920-bg.png") 0 0 no-repeat;
+      }
+
+      .webp-true & {
+        background: $primary-fb-color url("../img/pictures/fr-balconies-1920-bg.webp") 0 0 no-repeat;
+      }
+
+      .avif-true & {
+        background: $primary-fb-color url("../img/pictures/fr-balconies-1920-bg.avif") 0 0 no-repeat;
+      }
+    }
+
+    &_glass {
+      .webp-false &,
+      .avif-false & {
+        background: $primary-fb-color url("../img/pictures/fr-glass-1920-bg.png") 0 0 no-repeat;
+      }
+
+      .webp-true & {
+        background: $primary-fb-color url("../img/pictures/fr-glass-1920-bg.webp") 0 0 no-repeat;
+      }
+
+      .avif-true & {
+        background: $primary-fb-color url("../img/pictures/fr-glass-1920-bg.avif") 0 0 no-repeat;
+      }
+    }
+
+    &_building {
+      .webp-false &,
+      .avif-false & {
+        background: $primary-fb-color url("../img/pictures/fr-building-1920-bg.png") 0 0 no-repeat;
+      }
+
+      .webp-true & {
+        background: $primary-fb-color url("../img/pictures/fr-building-1920-bg.webp") 0 0 no-repeat;
+      }
+
+      .avif-true & {
+        background: $primary-fb-color url("../img/pictures/fr-building-1920-bg.avif") 0 0 no-repeat;
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: $fourteenth-color;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $white-color;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  left: 1px;
+  bottom: 26px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child),
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:last-child,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:last-child {
+  margin: 0;
+}

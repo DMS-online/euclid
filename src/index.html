@@ -52,8 +52,22 @@
     <meta name="mobile-web-app-capable" content="yes">
     <!--#========== CONNECTING SCRIPTS ==========#-->
     <script src="js/main.min.js" defer></script>
+    <!--#========== IF THE SCRIPTS ARE NOT LOADED ==========#-->
+    <noscript>
+      <style>
+        .body {
+          overflow: visible;
+        }
+
+        .loader {
+          display: none;
+        }
+      </style>
+    </noscript>
   </head>
   <body class="body page__body">
+    <!--#========== CONNECTING LOADER ==========#-->
+    @@include("kit/components/home/_loader.html")
     <!--#========== CONNECTING THE SITE HEADER ==========#-->
     @@include("kit/templates/_header.html")
     <!--#========== THE MAIN PART OF THE SITE ==========#-->

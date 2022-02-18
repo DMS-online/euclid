@@ -1,0 +1,190 @@
+.site-footer {
+  padding: 50px 0;
+  background-color: $eleventh-color;
+
+  &__container {
+    @include f-center-sb;
+  }
+
+  &__desc {
+    max-width: 363px;
+    line-height: 32px;
+    color: $fourth-color;
+  }
+}
+
+.left-footer {
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    margin-bottom: 90px;
+  }
+}
+
+.list-footer {
+  &__link {
+    @include outlineFocus(2px, 3px);
+
+    position: relative;
+    display: inline-block;
+    font-weight: $second-font-weight;
+    font-size: $text-size-medium;
+    line-height: 36px;
+    color: $fourth-color;
+    transition: color $fast-transition-duration ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible::before {
+      outline-color: $primary-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &:active {
+      color: $third-color-effects;
+    }
+  }
+}
+
+.socials-footer {
+  @include f-center-sb;
+
+  max-width: 230px;
+
+  &__link {
+    @include outlineFocus(2px, 3px);
+
+    position: relative;
+    display: inline-block;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible::before {
+      outline-color: $primary-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover .socials-footer__icon {
+        fill: $primary-color;
+      }
+    }
+
+    &:active .socials-footer__icon {
+      fill: $third-color-effects;
+    }
+  }
+
+  &__icon {
+    fill: $seventh-color;
+    transition: fill $fast-transition-duration ease-in-out;
+  }
+}
+
+.middle-footer {
+  width: min(100%, 570px);
+  transform: translateX(58px);
+
+  &__title {
+    margin-bottom: 25px;
+    color: $fourth-color;
+  }
+}
+
+.request-form {
+  @include flex;
+
+  flex-direction: column;
+
+  &__label {
+    @include visuallyHidden;
+  }
+
+  &__field {
+    margin-bottom: 25px;
+    border-radius: $third-br;
+    padding: 14px 24px;
+    height: 60px;
+    line-height: 32px;
+    color: $fourth-color;
+    background-color: $ninth-color;
+    transition: background-color $fast-transition-duration ease-in-out;
+
+    &_message {
+      margin-bottom: 32px;
+      height: 150px;
+      resize: none;
+    }
+
+    &::placeholder {
+      color: currentColor;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible {
+      color: $white-color;
+      background-color: $eighth-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        background-color: $eighth-color;
+      }
+    }
+  }
+
+  &__box {
+    @include f-center-sb;
+  }
+
+  &__send {
+    padding: 19px 52px;
+    min-width: 269px;
+  }
+
+  &__field-check {
+    @include visuallyHidden;
+
+    &:checked + .request-form__label-agree::after {
+      background: url("../img/sprites/sprite.svg#icon-check-bg") center / 10px 8px no-repeat;
+    }
+
+    &.focus-visible + .request-form__label-agree::before {
+      outline-color: $primary-color;
+    }
+  }
+
+  &__label-agree {
+    @include outlineFocus(2px, 1px);
+
+    position: relative;
+    line-height: 32px;
+    color: $fourth-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 9px;
+      display: inline-block;
+      border: 1px solid $fourth-color;
+      border-radius: $primary-br;
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
