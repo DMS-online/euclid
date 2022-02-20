@@ -19,12 +19,12 @@
     margin-bottom: 20px;
   }
 
-  &__list {
+  &__nav {
     margin-bottom: 90px;
   }
 }
 
-.list-footer {
+.nav-footer {
   &__link {
     @include outlineFocus(2px, 3px);
 

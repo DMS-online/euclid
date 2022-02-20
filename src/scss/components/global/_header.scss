@@ -13,6 +13,10 @@
     position: relative;
   }
 
+  &__burger {
+    position: relative;
+  }
+
   &__logo {
     margin-right: 31.24294%;
   }
@@ -45,11 +49,95 @@
 }
 
 .burger-header {
+  @include outlineFocus(2px, 3px);
+
   display: none;
+  overflow: hidden;
+  width: 30px;
+  height: 23px;
+
+  &__line {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: $tenth-color;
+    transform-origin: center;
+
+    &_first {
+      top: 0;
+    }
+
+    &_fourth {
+      bottom: 0;
+    }
+
+    &_first,
+    &_fourth {
+      transition-property: background-color, opacity, transform;
+      transition-duration: $fast-transition-duration;
+      transition-timing-function: ease-in-out;
+    }
+
+    &_second,
+    &_third {
+      top: 50%;
+      transform: translateY(-50%);
+      transition-property: background-color, transform;
+      transition-duration: $fast-transition-duration;
+      transition-timing-function: ease-in-out;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.focus-visible::before {
+    outline-color: $primary-color;
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover &__line {
+      background-color: $primary-color;
+    }
+
+    &:hover &__line_second,
+    &:hover &__line_third {
+      transform: translateY(-50%) translateX(5px);
+    }
+
+    &:hover &__line_fourth {
+      transform: translateX(12px);
+    }
+  }
+
+  &:active &__line {
+    background-color: $third-color-effects;
+  }
+
+  .burger-active &__line_first {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  .burger-active &__line_fourth {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  .burger-active &__line_second {
+    transform: rotate(45deg);
+  }
+
+  .burger-active &__line_third {
+    transform: rotate(-45deg);
+  }
 }
 
 .nav-header {
   width: 40%;
+  transition: transform $fast-transition-duration ease-in-out;
 
   &__list {
     @include f-center-sb;
@@ -89,6 +177,10 @@
       text-decoration-color: currentColor;
       color: $third-color-effects;
     }
+  }
+
+  &.burger-active {
+    display: block;
   }
 }
 

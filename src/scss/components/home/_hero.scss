@@ -52,45 +52,45 @@
     &_balconies {
       .webp-false &,
       .avif-false & {
-        background: $primary-fb-color url("../img/pictures/fr-balconies-1920-bg.png") 0 0 no-repeat;
+        background: $primary-fb-color url("../img/pictures/fr-balconies-1920-bg.png") center / cover no-repeat;
       }
 
       .webp-true & {
-        background: $primary-fb-color url("../img/pictures/fr-balconies-1920-bg.webp") 0 0 no-repeat;
+        background: $primary-fb-color url("../img/pictures/fr-balconies-1920-bg.webp") center / cover no-repeat;
       }
 
       .avif-true & {
-        background: $primary-fb-color url("../img/pictures/fr-balconies-1920-bg.avif") 0 0 no-repeat;
+        background: $primary-fb-color url("../img/pictures/fr-balconies-1920-bg.avif") center / cover no-repeat;
       }
     }
 
     &_glass {
       .webp-false &,
       .avif-false & {
-        background: $primary-fb-color url("../img/pictures/fr-glass-1920-bg.png") 0 0 no-repeat;
+        background: $primary-fb-color url("../img/pictures/fr-glass-1920-bg.png") center / cover no-repeat;
       }
 
       .webp-true & {
-        background: $primary-fb-color url("../img/pictures/fr-glass-1920-bg.webp") 0 0 no-repeat;
+        background: $primary-fb-color url("../img/pictures/fr-glass-1920-bg.webp") center / cover no-repeat;
       }
 
       .avif-true & {
-        background: $primary-fb-color url("../img/pictures/fr-glass-1920-bg.avif") 0 0 no-repeat;
+        background: $primary-fb-color url("../img/pictures/fr-glass-1920-bg.avif") center / cover no-repeat;
       }
     }
 
     &_building {
       .webp-false &,
       .avif-false & {
-        background: $primary-fb-color url("../img/pictures/fr-building-1920-bg.png") 0 0 no-repeat;
+        background: $primary-fb-color url("../img/pictures/fr-building-1920-bg.png") center / cover no-repeat;
       }
 
       .webp-true & {
-        background: $primary-fb-color url("../img/pictures/fr-building-1920-bg.webp") 0 0 no-repeat;
+        background: $primary-fb-color url("../img/pictures/fr-building-1920-bg.webp") center / cover no-repeat;
       }
 
       .avif-true & {
-        background: $primary-fb-color url("../img/pictures/fr-building-1920-bg.avif") 0 0 no-repeat;
+        background: $primary-fb-color url("../img/pictures/fr-building-1920-bg.avif") center / cover no-repeat;
       }
     }
   }

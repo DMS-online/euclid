@@ -13,9 +13,11 @@
 }
 
 .list-how {
-  @include f-center-sb;
+  @include f-ai-center;
 
-  width: min(100%, 458px);
+  &__item:not(:last-child) {
+    margin-right: 85px;
+  }
 
   &__step {
     @include outlineFocus(2px, 3px);
@@ -76,6 +78,7 @@
   &__actions {
     @include f-center-sb;
 
+    margin-top: 30px;
     max-width: 354px;
   }
 
