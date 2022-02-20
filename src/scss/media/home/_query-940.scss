@@ -1,0 +1,61 @@
+@media screen and (max-width: 58.75em) {
+  .content-how {
+    flex-wrap: wrap-reverse;
+
+    &__inner {
+      max-width: 100%;
+    }
+
+    &__picture {
+      margin-bottom: 38px;
+      border-radius: $fifth-br;
+      transform: translateY(0);
+    }
+  }
+
+  .accordion-faq {
+    &__item:nth-child(2) &__title {
+      max-width: 626px;
+    }
+
+    &__item:nth-child(3) &__title {
+      max-width: 528px;
+    }
+
+    &__item:nth-child(4) &__title {
+      max-width: 740px;
+    }
+
+    &__item:nth-child(5) &__title {
+      max-width: 540px;
+    }
+
+    &__item:nth-child(3),
+    &__item:nth-child(5) {
+      padding: 30px 0;
+    }
+
+    &__item:nth-child(3) &__icon,
+    &__item:nth-child(5) &__icon {
+      top: 7px;
+    }
+  }
+
+  .site-footer {
+    &__container {
+      flex-wrap: wrap-reverse;
+    }
+
+    &__left {
+      margin-right: 76px;
+    }
+
+    &__middle {
+      margin-bottom: 50px;
+    }
+  }
+
+  .nav-footer {
+    display: none;
+  }
+}

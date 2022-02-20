@@ -1,0 +1,43 @@
+@media screen and (max-width: 45.625em) {
+  .section-hero {
+    &__container {
+      padding-top: 60px;
+    }
+  }
+
+  .accordion-faq {
+    &__item:nth-child(1) &__title {
+      max-width: 460px;
+    }
+
+    &__item:nth-child(2) &__title {
+      max-width: 400px;
+    }
+
+    &__item:nth-child(3) &__title {
+      max-width: 310px;
+    }
+
+    &__item:nth-child(4) &__title {
+      max-width: 360px;
+    }
+
+    &__item:nth-child(5) &__title {
+      max-width: 360px;
+    }
+  }
+
+  .request-form {
+    &__box {
+      flex-wrap: wrap;
+    }
+
+    &__send {
+      margin: 0 42px 12px 0;
+    }
+
+    &__label-agree {
+      transform: translateX(22px);
+    }
+  }
+}

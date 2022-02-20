@@ -52,7 +52,6 @@
   @include outlineFocus(2px, 3px);
 
   display: none;
-  overflow: hidden;
   width: 30px;
   height: 23px;
 
@@ -100,15 +99,6 @@
   @media screen and (any-hover: hover) {
     &:hover &__line {
       background-color: $primary-color;
-    }
-
-    &:hover &__line_second,
-    &:hover &__line_third {
-      transform: translateY(-50%) translateX(5px);
-    }
-
-    &:hover &__line_fourth {
-      transform: translateX(12px);
     }
   }
 

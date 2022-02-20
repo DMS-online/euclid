@@ -1,5 +1,4 @@
 const accordionBoxes = document.querySelectorAll('.accordion-faq__item');
-// const accordionBtns = document.querySelectorAll('.accordion-faq__btn');
 
 accordionBoxes.forEach((el) => {
   el.addEventListener('click', (e) => {
@@ -20,13 +19,3 @@ accordionBoxes.forEach((el) => {
     }
   });
 });
-
-// accordionBtns.forEach((el) => {
-//   el.addEventListener('focus', (e) => {
-//     accordionBoxes.forEach((item) => {
-//       item.classList.remove('focus');
-//     });
-
-//     e.currentTarget.closest('.accordion-faq__item').classList.add('focus');
-//   });
-// });

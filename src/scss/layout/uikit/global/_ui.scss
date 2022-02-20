@@ -9,6 +9,7 @@
 
 .body {
   overflow: hidden;
+  padding-right: var(--scroll-indent);
   font-family: $primary-font-family;
   color: $tenth-color;
 
@@ -29,6 +30,7 @@
 
 .body.loaded {
   overflow: visible;
+  padding-right: 0;
 }
 
 .container {

@@ -26,22 +26,20 @@
 // |----->
 // |=============== CONNECTING THE GLOBAL FOOTER SITE ===============>
 @import "components/global/footer";
-// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 1920 ===============>
-@import "media/home/query-1920";
-// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 1720 ===============>
-@import "media/home/query-1720";
 // |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 1520 ===============>
 @import "media/home/query-1520";
-// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 1520 ===============>
+// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 1320 ===============>
 @import "media/home/query-1320";
-// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 1120 ===============>
-@import "media/home/query-1120";
-// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 920 ===============>
-@import "media/home/query-920";
-// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 720 ===============>
-@import "media/home/query-720";
-// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 572 ===============>
-@import "media/home/query-572";
+// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 1024 ===============>
+@import "media/home/query-1024";
+// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 940 ===============>
+@import "media/home/query-940";
+// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 768 ===============>
+@import "media/home/query-768";
+// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 730 ===============>
+@import "media/home/query-730";
+// |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 576 ===============>
+@import "media/home/query-576";
 // |=============== CONNECTING MEDIA-QUERIES FOR BREAKPOINT - 320 ===============>
 @import "media/home/query-320";
 // |=============== CONNECTING A GLOBAL MEDIA-QUERIES TO DISABLE ANIMATIONS AND EFFECTS ===============>

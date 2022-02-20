@@ -1,9 +1,66 @@
-// |=============== DESKTOP FIRST | 1319.98px | CONTAINER - 1076px ===============>
-@media screen and (max-width: 82.49875em) {
+@media screen and (max-width: 82.5em) {
+  .site-header {
+    &__logo {
+      margin-right: auto;
+    }
+  }
 
-}
+  .nav-header {
+    width: 54%;
+  }
 
-// |=============== MOBILE FIRST | 1320px | CONTAINER - 1268px ===============>
-@media screen and (min-width: 82.5em) {
+  .section-hero {
+    &__container {
+      padding: 164px 90px 160px 127px;
+    }
 
+    &__title {
+      margin-bottom: 13px;
+      font-size: $text-size-max-medium;
+      line-height: 73px;
+    }
+
+    &__desc {
+      margin-bottom: 59px;
+      max-width: 660px;
+      font-size: $text-size-big;
+      line-height: 24px;
+    }
+  }
+
+  .content-about {
+    grid-template: minmax(640px, auto) minmax(622px, auto) / 1fr;
+  }
+
+  .left-about {
+    &__box {
+      flex-wrap: nowrap;
+    }
+
+    &__desc {
+      margin: 0 20px 0 0;
+      max-width: 454px;
+    }
+  }
+
+  .list-about {
+    &__content {
+      padding: 64px 154px 64px 50px;
+      background-position: 95% 64px;
+    }
+
+    &__desc {
+      max-width: 450px;
+    }
+  }
+
+  .accordion-faq {
+    &__item:nth-child(2) &__title {
+      max-width: 700px;
+    }
+
+    &__item:nth-child(4) &__title {
+      max-width: 840px;
+    }
+  }
 }

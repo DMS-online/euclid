@@ -1,0 +1,207 @@
+@media screen and (max-width: 48em) {
+  .site-header {
+    border-radius: 0 0 $fourth-br $fourth-br;
+    padding: 10px 0 11px;
+
+    &__logo {
+      position: relative;
+      z-index: $fourth-z;
+    }
+
+    &__nav {
+      top: 41px;
+    }
+
+    &__form-search {
+      right: 0;
+      z-index: $fifth-z;
+    }
+  }
+
+  .nav-header {
+    padding-top: 152px;
+  }
+
+  .search-form {
+    border-radius: 0 0 $fourth-br $fourth-br;
+    padding: 21px 50px;
+    width: 100%;
+    height: calc(100% + 21px);
+
+    &__field {
+      width: 100%;
+      font-size: $text-size-base;
+    }
+  }
+
+  .section-hero {
+    &__container {
+      padding: 163px 89px 161px 90px;
+    }
+
+    &__title {
+      font-size: $text-size-max-small;
+      line-height: 61px;
+    }
+
+    &__desc {
+      font-size: $text-size-medium;
+      line-height: 22px;
+    }
+
+    &__swiper {
+      border-radius: $fourth-br;
+    }
+
+    &__slide {
+      border-radius: $fourth-br;
+
+      &_balconies {
+        .webp-false &,
+        .avif-false & {
+          background: $primary-fb-color url("../img/pictures/fr-balconies-768-bg.png") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $primary-fb-color url("../img/pictures/fr-balconies-768-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $primary-fb-color url("../img/pictures/fr-balconies-768-bg.avif") center / cover no-repeat;
+        }
+      }
+
+      &_glass {
+        .webp-false &,
+        .avif-false & {
+          background: $primary-fb-color url("../img/pictures/fr-glass-768-bg.png") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $primary-fb-color url("../img/pictures/fr-glass-768-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $primary-fb-color url("../img/pictures/fr-glass-768-bg.avif") center / cover no-repeat;
+        }
+      }
+
+      &_building {
+        .webp-false &,
+        .avif-false & {
+          background: $primary-fb-color url("../img/pictures/fr-building-768-bg.png") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $primary-fb-color url("../img/pictures/fr-building-768-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $primary-fb-color url("../img/pictures/fr-building-768-bg.avif") center / cover no-repeat;
+        }
+      }
+    }
+  }
+
+  .section-about {
+    &__desc {
+      margin-bottom: 60px;
+    }
+  }
+
+  .content-about {
+    grid-template: minmax(650px, auto) minmax(502px, auto) / 1fr;
+  }
+
+  .left-about {
+    border-radius: $fourth-br;
+
+    &__box {
+      border-radius: $fourth-br;
+      padding: 34px 40px;
+    }
+
+    &__desc {
+      max-width: 366px;
+    }
+
+    .webp-false &,
+    .avif-false & {
+      background: url("../img/pictures/fr-builder-768-bg.png") center / cover no-repeat;
+    }
+
+    .webp-true & {
+      background: url("../img/pictures/fr-builder-768-bg.webp") center / cover no-repeat;
+    }
+
+    .avif-true & {
+      background: url("../img/pictures/fr-builder-768-bg.avif") center / cover no-repeat;
+    }
+  }
+
+  .list-about {
+    grid-auto-rows: minmax(235px, auto);
+    grid-template: repeat(2, minmax(235px, auto)) / 1fr;
+    gap: 32px;
+
+    &__content {
+      border-radius: $fourth-br;
+      padding: 34px 44px 34px 170px;
+      background-position: 39px 67px;
+      background-size: 114px 99px;
+    }
+  }
+
+  .section-how {
+    &_indent {
+      margin-bottom: 53px;
+    }
+
+    &__list {
+      margin-bottom: 48px;
+    }
+  }
+
+  .list-how {
+    justify-content: space-between;
+
+    &__item:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  .content-how {
+    &__inner {
+      margin-right: 0;
+    }
+
+    &__picture {
+      margin-bottom: 40px;
+      border-radius: 0;
+    }
+  }
+
+  .section-faq {
+    padding-bottom: 111px;
+  }
+
+  .accordion-faq {
+    &__item:nth-child(5) &__title {
+      max-width: 560px;
+    }
+  }
+
+  .site-footer {
+    &__left {
+      margin-right: 0;
+    }
+  }
+
+  .left-footer {
+    width: 100%;
+
+    &__logo {
+      margin-bottom: 16px;
+    }
+  }
+}

@@ -2,7 +2,7 @@ import superplaceholder from 'superplaceholder';
 
 superplaceholder({
   el: document.querySelector('.search-form__field'),
-  sentences: ['Пример: Этапы проектирования'],
+  sentences: ['Пример: Чертежи'],
   options: {
     letterDelay: 40,
     sentenceDelay: 700,

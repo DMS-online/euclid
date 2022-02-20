@@ -1,9 +1,50 @@
-// |=============== DESKTOP FIRST | 320px | CONTAINER - 100% ===============>
 @media screen and (max-width: 20em) {
+  .section-hero {
+    &__slide {
+      &_balconies {
+        .webp-false &,
+        .avif-false & {
+          background: $primary-fb-color url("../img/pictures/fr-balconies-320-bg.png") center / cover no-repeat;
+        }
 
-}
+        .webp-true & {
+          background: $primary-fb-color url("../img/pictures/fr-balconies-320-bg.webp") center / cover no-repeat;
+        }
 
-// |=============== MOBILE FIRST | 320px | CONTAINER - 100% ===============>
-@media screen and (min-width: 20em) {
+        .avif-true & {
+          background: $primary-fb-color url("../img/pictures/fr-balconies-320-bg.avif") center / cover no-repeat;
+        }
+      }
 
+      &_glass {
+        .webp-false &,
+        .avif-false & {
+          background: $primary-fb-color url("../img/pictures/fr-glass-320-bg.png") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $primary-fb-color url("../img/pictures/fr-glass-320-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $primary-fb-color url("../img/pictures/fr-glass-320-bg.avif") center / cover no-repeat;
+        }
+      }
+
+      &_building {
+        .webp-false &,
+        .avif-false & {
+          background: $primary-fb-color url("../img/pictures/fr-building-320-bg.png") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $primary-fb-color url("../img/pictures/fr-building-320-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $primary-fb-color url("../img/pictures/fr-building-320-bg.avif") center / cover no-repeat;
+        }
+      }
+    }
+  }
 }

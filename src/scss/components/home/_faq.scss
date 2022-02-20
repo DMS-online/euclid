@@ -60,6 +60,14 @@
       width: 100%;
       min-height: 112px;
     }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible .accordion-faq__title {
+      color: $primary-color;
+    }
   }
 
   &__title {

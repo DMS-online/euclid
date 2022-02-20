@@ -1,0 +1,230 @@
+@media screen and (max-width: 64em) {
+  .page {
+    &__body.scroll-hidden {
+      @include scrollHidden;
+    }
+  }
+
+  .site-header {
+    padding: 26px 0;
+
+    &_indent {
+      margin-bottom: 40px;
+    }
+
+    &__container {
+      justify-content: space-between;
+    }
+
+    &__burger {
+      z-index: $fourth-z;
+    }
+
+    &__logo {
+      margin-right: 0;
+    }
+
+    &__nav {
+      position: absolute;
+      left: 0;
+      top: 48px;
+      z-index: $third-z;
+    }
+  }
+
+  .burger-header {
+    display: inline-block;
+  }
+
+  .logo-header {
+    &__picture {
+      width: 150px;
+      height: 48px;
+    }
+  }
+
+  .nav-header {
+    overflow-y: auto;
+    border-radius: 0 0 $fifth-br $fifth-br;
+    padding: 170px 106px 100px 50px;
+    height: 100vh;
+    max-width: 420px;
+    background-color: $white-color;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition-property: opacity, visibility, transform;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &__list {
+      display: block;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 60px;
+    }
+
+    &__link {
+      font-weight: $third-font-weight;
+      font-size: $text-size-huge;
+      line-height: 29px;
+    }
+
+    &.burger-active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
+
+  .section-hero {
+    &_indent {
+      margin-bottom: 39px;
+    }
+
+    &__slide {
+      &_balconies {
+        .webp-false &,
+        .avif-false & {
+          background: $primary-fb-color url("../img/pictures/fr-balconies-1024-bg.png") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $primary-fb-color url("../img/pictures/fr-balconies-1024-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $primary-fb-color url("../img/pictures/fr-balconies-1024-bg.avif") center / cover no-repeat;
+        }
+      }
+
+      &_glass {
+        .webp-false &,
+        .avif-false & {
+          background: $primary-fb-color url("../img/pictures/fr-glass-1024-bg.png") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $primary-fb-color url("../img/pictures/fr-glass-1024-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $primary-fb-color url("../img/pictures/fr-glass-1024-bg.avif") center / cover no-repeat;
+        }
+      }
+
+      &_building {
+        .webp-false &,
+        .avif-false & {
+          background: $primary-fb-color url("../img/pictures/fr-building-1024-bg.png") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $primary-fb-color url("../img/pictures/fr-building-1024-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $primary-fb-color url("../img/pictures/fr-building-1024-bg.avif") center / cover no-repeat;
+        }
+      }
+    }
+  }
+
+  .section-about {
+    &_indent {
+      margin-bottom: 84px;
+    }
+
+    &__title {
+      margin-bottom: 11px;
+    }
+
+    &__desc {
+      margin-bottom: 62px;
+    }
+  }
+
+  .left-about {
+    .webp-false &,
+    .avif-false & {
+      background: url("../img/pictures/fr-builder-1024-bg.png") center / cover no-repeat;
+    }
+
+    .webp-true & {
+      background: url("../img/pictures/fr-builder-1024-bg.webp") center / cover no-repeat;
+    }
+
+    .avif-true & {
+      background: url("../img/pictures/fr-builder-1024-bg.avif") center / cover no-repeat;
+    }
+  }
+
+  .list-about {
+    &__content {
+      padding: 66px 127px 62px 316px;
+      background-position: 76px 64px;
+    }
+  }
+
+  .section-how {
+    &_indent {
+      margin-bottom: 84px;
+    }
+
+    &__list {
+      margin-bottom: 51px;
+    }
+  }
+
+  .content-how {
+    &__inner {
+      margin-right: 50px;
+      max-width: 47.29437%;
+    }
+
+    &__picture {
+      transform: translateY(10px);
+    }
+
+    &__actions {
+      margin-top: 23px;
+    }
+
+    &__more {
+      margin-right: 32px;
+    }
+  }
+
+  .section-faq {
+    padding-bottom: 80px;
+  }
+
+  .accordion-faq {
+    &__title {
+      font-size: $text-size-big;
+      line-height: 32px;
+    }
+
+    &__item:nth-child(2),
+    &__item:nth-child(4) {
+      padding: 30px 0;
+    }
+
+    &__item:nth-child(2) &__icon,
+    &__item:nth-child(4) &__icon {
+      top: 7px;
+    }
+  }
+
+  .middle-footer {
+    width: min(100%, 541px);
+  }
+
+  .request-form {
+    &__send {
+      padding: 19px 38px;
+      min-width: 241px;
+    }
+  }
+}
