@@ -6,7 +6,7 @@ class TempScrollBox {
   }
 
   measureScrollbarWidth() {
-    let scrollBox = document.createElement('div');
+    const scrollBox = document.createElement('div');
 
     scrollBox.style.overflow = 'scroll';
 
@@ -22,6 +22,6 @@ class TempScrollBox {
   }
 }
 
-let scrollEl = new TempScrollBox();
+const scrollEl = new TempScrollBox();
 
 document.documentElement.style.setProperty('--scroll-indent', `${scrollEl.width}px`);
