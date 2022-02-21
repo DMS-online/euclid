@@ -50,22 +50,6 @@
     <meta name="color-scheme" content="light">
     <!--#========== ADDS THE SITE TO THE HOME SCREEN AS AN ANDROID APP ==========#-->
     <meta name="mobile-web-app-capable" content="yes">
-    <!--#========== CALCULATING THE SCROLL WIDTH ==========#-->
-    <script>
-      var boxCheck = document.createElement('div');
-      var siteBody = document.querySelector('body');
-
-      boxCheck.style.overflowY = 'scroll';
-      boxCheck.style.width = '50px';
-      boxCheck.style.height = '50px';
-
-      document.body.append(boxCheck);
-      var scrollWidth = boxCheck.offsetWidth - boxCheck.clientWidth;
-
-      boxCheck.remove();
-
-      siteBody.style.setProperty('--scroll-indent', scrollWidth);
-    </script>
     <!--#========== CONNECTING SCRIPTS ==========#-->
     <script src="js/main.min.js" defer></script>
     <!--#========== IF THE SCRIPTS ARE NOT LOADED ==========#-->

@@ -2,6 +2,8 @@
 // |=============== CONNECTING EXTERNAL MODULES ===============>
 import focusVisible from 'focus-visible';
 
+// |=============== SCRIPT CONNECTION | SCROLL ===============>
+import scrollIndent from './components/home/scroll-indent';
 // |=============== SCRIPT CONNECTION | LOADER ===============>
 import loader from './components/home/loader';
 // |=============== SCRIPT CONNECTION | BURGER ===============>
