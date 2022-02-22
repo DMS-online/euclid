@@ -10,6 +10,7 @@
 .body {
   overflow: hidden;
   padding-right: var(--scroll-indent);
+  min-width: 320px;
   font-family: $primary-font-family;
   color: $tenth-color;
 
